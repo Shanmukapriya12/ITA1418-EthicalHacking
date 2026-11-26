@@ -1,0 +1,45 @@
+1. uptime command
+Purpose: Displays how long the Kali Linux system has been running.
+
+Command:
+uptime
+
+
+Expected output:
+18:30:15 up 2 hours, 15 min, 1 user, load average: 0.10, 0.20, 0.15
+
+
+Your output will show your actual system uptime.
+2. date command
+Purpose: Displays the current date and time.
+
+Command:
+date
+
+
+Expected output:
+Thu Nov 26 18:30:15 IST 2026
+
+
+Your date and time will be different.
+3. mv command
+Purpose: Moves a file from one location to another.
+
+Step 1: Create a file
+touch file1.txt
+
+
+Step 2: Create a destination folder
+mkdir folder1
+
+
+Step 3: Move the file
+mv file1.txt folder1/
+
+
+Step 4: Check the moved file
+ls folder1
+
+
+Expected output:
+file1.txt
