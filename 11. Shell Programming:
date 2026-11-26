@@ -1,0 +1,59 @@
+1. Shell program to find the square of a number
+Step 1: Create a shell script
+nano square.sh
+
+
+Step 2: Type this program
+#!/bin/bash
+echo "Enter a number:"
+read n
+square=$((n * n))
+echo "Square = $square"
+
+
+Save: Press Ctrl + O, Enter, then Ctrl + X.
+
+Step 3: Execute the program
+chmod +x square.sh
+./square.sh
+
+
+Expected output:
+Enter a number:
+5
+Square = 25
+
+
+
+2. Shell program to find the biggest of three numbers
+Step 1: Create a shell script
+nano biggest.sh
+
+
+Step 2: Type this program
+#!/bin/bash
+echo "Enter three numbers:"
+read a b c
+
+if [ $a -ge $b ] && [ $a -ge $c ]
+then
+    echo "Biggest number = $a"
+elif [ $b -ge $a ] && [ $b -ge $c ]
+then
+    echo "Biggest number = $b"
+else
+    echo "Biggest number = $c"
+fi
+
+
+Save: Press Ctrl + O, Enter, then Ctrl + X.
+
+Step 3: Execute the program
+chmod +x biggest.sh
+./biggest.sh
+
+
+Expected output:
+Enter three numbers:
+10 25 15
+Biggest number = 25
