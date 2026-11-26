@@ -1,0 +1,26 @@
+1. Create a directory
+mkdir Project
+
+
+2. List files and directories
+ls
+
+
+3. Enter the project directory
+cd Project
+
+
+4. Create a text file
+echo "Welcome to my Kali Linux project" > details.txt
+
+
+5. Display directory contents
+ls
+
+
+6. Display text file contents
+cat details.txt
+
+
+7. Display detailed file information
+ls -l
