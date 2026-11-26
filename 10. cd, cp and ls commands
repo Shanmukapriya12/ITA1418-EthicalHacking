@@ -1,0 +1,23 @@
+1. cd command
+mkdir lab
+cd lab
+pwd
+
+
+Output:
+/home/kali/project/lab
+
+
+2. cp command
+echo "Kali Linux Lab" > file1.txt
+cp file1.txt backup.txt
+
+
+The file file1.txt was successfully copied as backup.txt.
+
+3. ls command
+ls
+
+
+Output:
+backup.txt  file1.txt
