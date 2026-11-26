@@ -1,0 +1,47 @@
+1. RM command – Remove an unwanted file
+cd Desktop
+
+
+Create a sample file:
+touch unwanted.txt
+
+
+Display the file:
+ls
+
+
+Remove the file:
+rm unwanted.txt
+
+
+Verify deletion:
+ls
+
+
+2. USERS command – Display logged-in users
+Execute:
+users
+
+
+Example output:
+kali
+
+
+3. TREE command – Display directory structure
+First install tree:
+sudo apt update
+
+
+sudo apt install tree -y
+
+
+Display the directory structure:
+tree
+
+
+Display hidden files and folders:
+tree -a
+
+
+Display only the first two directory levels:
+tree -L 2
