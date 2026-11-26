@@ -1,0 +1,19 @@
+1. Check theHarvester installation
+theHarvester -h
+
+
+Expected output:
+theHarvester
+usage: theHarvester [-h] ...
+
+
+2. Update Kali packages
+sudo apt update
+
+
+3. Install theHarvester
+sudo apt install theharvester -y
+
+
+4. Run information gathering
+theHarvester -d example.com -b duckduckgo
