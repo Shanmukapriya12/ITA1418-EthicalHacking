@@ -1,0 +1,6 @@
+1. Basic port scanning
+nmap 192.168.56.101
+
+
+2. Extended port scanning (your actual Zenmap scan)
+nmap -Pn -sS -sV -p- -O 192.168.56.101
