@@ -1,0 +1,8 @@
+In Nmap, enter this as the Target:
+192.168.56.0/24
+
+
+Then select Scan.
+
+Correct command
+sudo nmap -sn 192.168.56.0/24
