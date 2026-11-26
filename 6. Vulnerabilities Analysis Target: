@@ -1,0 +1,32 @@
+1. Check Nikto version (Kali Linux)
+nikto -Version
+
+
+Output:
+Nikto 2.6.0 (LW 2.5)
+
+
+2. Start Metasploitable 2
+Login details:
+Username: msfadmin
+Password: msfadmin
+
+
+Find the target IP:
+ifconfig
+
+
+Output:
+inet addr:192.168.56.101
+
+
+3. Check target connectivity (Kali)
+ping -c 4 192.168.56.101
+
+
+Output:
+4 packets transmitted, 4 received, 0% packet loss
+
+
+4. Perform CGI scanning using Nikto
+nikto -h http://192.168.56.101 -Cgidirs all
