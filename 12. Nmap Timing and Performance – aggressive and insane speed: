@@ -1,0 +1,51 @@
+open the metasplot,,,,
+
+Step 1. Host discovery scan Completed
+
+You already completed this.
+
+- Target:
+192.168.56.101
+
+
+- Command:
+nmap -sn 192.168.56.101
+
+
+Step 2. Aggressive speed scan (T4)
+- Target:
+192.168.56.101
+
+
+- Command:
+nmap -Pn -T4 192.168.56.101
+
+
+Click Scan and save the output screenshot.
+Step 3. Insane speed scan (T5)
+- Target:
+192.168.56.101
+
+
+- Command:
+nmap -Pn -T5 192.168.56.101
+
+
+Click Scan and save the output screenshot.
+Step 4. Aggressive scan with service version detection
+- Target:
+192.168.56.101
+
+
+- Command:
+nmap -Pn -sV -T4 192.168.56.101
+
+
+Click Scan.
+Step 5. Insane scan with service version detection
+- Target:
+192.168.56.101
+
+
+- Command:
+nmap -Pn -sV -T5 192.168.56.101
