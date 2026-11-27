@@ -1,0 +1,99 @@
+Command:
+pwd
+
+
+Expected output (example):
+/home/kali
+
+
+This indicates that your current working directory is /home/kali.
+Step 3: Using the touch command
+The touch command creates an empty file.
+
+Command 1: Create a file
+touch student.txt
+
+
+Expected output:
+(No output)
+
+
+Command 2: Verify the file
+ls
+
+
+Expected output (example):
+Desktop  Documents  Downloads  student.txt
+
+
+Command 3: Check file details
+ls -l student.txt
+
+
+Expected output (example):
+-rw-r--r-- 1 kali kali 0 Nov 27 23:10 student.txt
+
+
+Notice that the file size is 0 bytes because it is empty.
+
+Command 4: Create multiple files
+touch file1.txt file2.txt file3.txt
+
+
+Verify:
+ls file1.txt file2.txt file3.txt
+
+
+Expected output:
+file1.txt  file2.txt  file3.txt
+
+
+Step 4: Using the wget command
+The wget command downloads files from the internet or an accessible web server.
+
+For this practical, we will download an approved test file.
+
+Command 1: Download a test file
+wget https://www.gnu.org/licenses/gpl-3.0.txt
+
+
+Expected output (example):
+--2026-11-27 23:10:00--  https://www.gnu.org/licenses/gpl-3.0.txt
+Resolving www.gnu.org...
+Connecting to www.gnu.org...
+HTTP request sent, awaiting response... 200 OK
+Length: ... 
+Saving to: 'gpl-3.0.txt'
+
+gpl-3.0.txt       100%[==================>] 
+
+' gpl-3.0.txt' saved
+
+
+The actual download size and speed may differ.
+
+Command 2: Verify downloaded file
+ls
+
+
+Expected output (example):
+Desktop
+Documents
+Downloads
+student.txt
+file1.txt
+file2.txt
+file3.txt
+gpl-3.0.txt
+
+
+Command 3: Display downloaded file information
+ls -lh gpl-3.0.txt
+
+
+Expected output:
+-rw-r--r-- 1 kali kali 35K Nov 27 23:10 gpl-3.0.txt
+
+
+Command 4: Display first 10 lines
+head -10 gpl-3.0.txt
