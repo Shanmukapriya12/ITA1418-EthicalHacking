@@ -1,0 +1,132 @@
+Step 1: Create a text file
+Open Kali Linux → Terminal.
+
+Enter:
+nano sample.txt
+
+
+Type the following content:
+Kali Linux Commands
+1. Linux is an open-source operating system.
+2. Linux supports multiple users.
+3. Linux supports multitasking.
+4. The less command displays file contents page by page.
+5. The more command displays file contents one screen at a time.
+6. The vi command is used to create and edit files.
+7. Kali Linux is used for cybersecurity.
+8. Nmap is a network scanning tool.
+9. Linux provides command-line utilities.
+10. Terminal is used to execute commands.
+
+
+Save the file:
+- Press Ctrl + O
+- Press Enter
+- Press Ctrl + X
+Expected output: File sample.txt created.
+Step 2: Display using cat
+Command:
+cat sample.txt
+
+
+Expected output:
+Kali Linux Commands
+1. Linux is an open-source operating system.
+2. Linux supports multiple users.
+3. Linux supports multitasking.
+4. The less command displays file contents page by page.
+5. The more command displays file contents one screen at a time.
+6. The vi command is used to create and edit files.
+7. Kali Linux is used for cybersecurity.
+8. Nmap is a network scanning tool.
+9. Linux provides command-line utilities.
+10. Terminal is used to execute commands.
+
+
+Step 3: Using the more command
+Command:
+more sample.txt
+
+
+Expected output (depending on terminal size):
+Kali Linux Commands
+1. Linux is an open-source operating system.
+2. Linux supports multiple users.
+3. Linux supports multitasking.
+4. The less command displays file contents page by page.
+5. The more command displays file contents one screen at a time.
+--More--
+
+
+Important keys:
+Key	Function
+Space	Next page
+Enter	Next line
+b	Previous page (where supported)
+q	Quit
+
+Press Space to move forward and q to exit.
+Step 4: Using the less command
+Command:
+less sample.txt
+
+
+Expected output:
+Kali Linux Commands
+1. Linux is an open-source operating system.
+2. Linux supports multiple users.
+3. Linux supports multitasking.
+4. The less command displays file contents page by page.
+5. The more command displays file contents one screen at a time.
+6. The vi command is used to create and edit files.
+7. Kali Linux is used for cybersecurity.
+8. Nmap is a network scanning tool.
+9. Linux provides command-line utilities.
+10. Terminal is used to execute commands.
+
+
+Important keys:
+Key	Function
+Space	Next page
+b	Previous page
+↑ / ↓	Move line by line
+/Linux	Search for Linux
+n	Next search result
+q	Quit
+
+Press q to exit.
+Step 5: Using the vi command
+Command:
+vi sample.txt
+
+
+The file opens in the vi editor.
+
+erform these operations:
+1. Press i to enter Insert Mode.
+2. Go to the end of the file.
+3. Add this line:
+11. vi editor allows users to modify text files.
+
+
+4. Press Esc to return to Normal Mode.
+5. Type:
+:wq
+
+
+6. Press Enter.
+
+Expected result:
+"sample.txt" written
+
+
+Your file is now saved with the new line.
+Step 6: Verify the edited file
+Command:
+cat sample.txt
+
+
+Expected output (last lines):
+9. Linux provides command-line utilities.
+10. Terminal is used to execute commands.
+11. vi editor allows users to modify text files.
