@@ -1,0 +1,156 @@
+Command 1:
+free
+
+
+Expected output (example):
+               total        used        free      shared  buff/cache   available
+Mem:         8054320     2543210     3214560      123456     2296550     4987650
+Swap:        2097148           0     2097148
+
+
+Command 2:
+free -h
+
+
+Expected output:
+               total   used   free   shared  buff/cache  available
+Mem:           7.7Gi  2.4Gi  3.1Gi   120Mi      2.2Gi       4.8Gi
+Swap:          2.0Gi     0B  2.0Gi
+
+
+-h displays memory values in human-readable format (KB, MB, GB).
+
+Command 3:
+free -m
+
+
+Expected output:
+               total   used   free
+Mem:            7866   2483   3139
+Swap:           2047      0   2047
+
+
+-m displays memory values in MB.
+Step 3: Using the sort command
+The sort command arranges lines of text alphabetically or numerically.
+
+First, create a file:
+nano names.txt
+
+
+Enter:
+Ravi
+Anu
+Priya
+Kiran
+Bharath
+
+
+Save using:
+- Ctrl + O
+- Enter
+- Ctrl + X
+Command 1: Alphabetical sorting
+sort names.txt
+
+
+Expected output:
+Anu
+Bharath
+Kiran
+Priya
+Ravi
+
+
+Command 2: Reverse sorting
+sort -r names.txt
+
+
+Expected output:
+Ravi
+Priya
+Kiran
+Bharath
+Anu
+
+
+Command 3: Numeric sorting
+
+Create another file:
+nano numbers.txt
+
+
+Enter:
+50
+10
+40
+20
+30
+
+
+Save and execute:
+sort -n numbers.txt
+
+
+Expected output:
+10
+20
+30
+40
+50
+
+
+Command 4: Reverse numeric sorting
+sort -nr numbers.txt
+
+
+Expected output:
+50
+40
+30
+20
+10
+
+
+Step 4: Using the history command
+The history command displays previously executed commands in the terminal.
+
+Command 1: Display command history
+history
+
+
+Expected output (example):
+1  free
+2  free -h
+3  free -m
+4  nano names.txt
+5  sort names.txt
+6  sort -r names.txt
+7  nano numbers.txt
+8  sort -n numbers.txt
+9  sort -nr numbers.txt
+10 history
+
+
+Your command numbers and output will differ.
+
+Command 2: Display the last 5 commands
+history 5
+
+
+Expected output:
+15  sort names.txt
+16  sort -r names.txt
+17  sort -n numbers.txt
+18  sort -nr numbers.txt
+19  history 5
+
+
+Command 3: Search command history
+history | grep free
+
+
+Expected output:
+1  free
+2  free -h
+3  free -m
