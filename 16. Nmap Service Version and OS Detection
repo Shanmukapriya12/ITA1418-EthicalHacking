@@ -1,0 +1,72 @@
+Step 2: Service Version Detection
+This scan identifies the versions of services running on the target.
+Scan 1
+Target field:
+192.168.56.101
+
+
+Command field:
+nmap -Pn -sV 192.168.56.101
+
+
+Click Scan.
+
+
+
+
+
+Step 3: Aggressive Scan
+Aggressive scanning enables multiple detection features, including OS detection, version detection, default scripts and traceroute.
+Scan 2
+Target field:
+192.168.56.101
+
+
+Command field:
+nmap -Pn -A 192.168.56.101
+
+
+Click Scan.
+
+
+
+OS details:
+Linux 2.6.X
+
+Network Distance: 1 hop
+
+
+Your actual output will include additional details from Nmap scripts and traceroute if available.
+Step 4: OS Detection
+This scan attempts to identify the operating system of the target.
+Scan 3
+Target field:
+192.168.56.101
+
+
+Command field:
+nmap -Pn -O 192.168.56.101
+
+
+Click Scan.
+
+
+Device type: general purpose
+Running: Linux 2.6.X
+OS details: Linux 2.6.9 - 2.6.33
+
+Network Distance: 1 hop
+
+
+Nmap may report several possible Linux versions instead of one exact version.
+Step 5: OS Detection with service version detection
+Scan 4 – Additional
+Target field:
+192.168.56.101
+
+
+Command field:
+nmap -Pn -sV -O 192.168.56.101
+
+
+Click Scan.
