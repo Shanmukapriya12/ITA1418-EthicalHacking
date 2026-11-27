@@ -1,0 +1,11 @@
+Command	Operation
+i	Insert text
+a	Append text
+dd	Delete current line
+yy	Copy current line
+p	Paste copied line
+u	Undo
+:w	Save file
+:q	Quit
+:wq	Save and quit
+:q!	Quit without saving
